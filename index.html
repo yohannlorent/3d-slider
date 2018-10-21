@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slider zoomed</title>
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+   <link href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<img src="img/01.png" class="image1">
+
+<div class="next">next</div>
+
+<style type="text/css">
+  body{
+    margin:0;
+    padding:0;
+  }
+  .image1{
+  	display:block;
+  	position:absolute;
+  	z-index:200;
+  	left:50%;
+  	top:100%;
+  	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+  }
+</style>
+
+<script>
+
+   $( window ).on( "load", function() {
+     	$( ".image1" ).animate({
+			top: '40%',
+			width:'30%',
+			height:'20%'
+		},"slow");
+
+     	$( ".next" ).click(function() {
+   			$( ".image1" ).animate({
+			top: '35%',
+			width:'0',
+			height:'0'
+		},"slow");
+		});
+
+
+
+
+
+    });
+
+</script>
+
+   
+   
+</body>
+</html>
