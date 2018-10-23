@@ -11,9 +11,37 @@
 </head>
 
 <body>
-<div class="next">next</div>
 <div class="content3dSlider">
-	<img src="img/01.png" class="image1">
+	<div class="fond"></div>
+	<div class="bruit"></div>
+	<img src="img/rond1.png" class="rond1"/>
+	<img src="img/rond2.png" class="rond2"/>
+	<img src="img/rond3.png" class="rond3"/>
+	<img src="img/lumiereblanche.png" class="lumiereblanche">
+	<div class="ligne1"></div>
+	<div class="ligne2"></div>
+	<div class="logo"><img src="img/logo.png"></div>
+	<div class="menu"><img src="img/menu.png"></div>
+	<div class="loupe"><img src="img/loupe.png"></div>
+	<div class="contentPanier">
+		<div class="contenticonepanier">
+			<div class="bgpanier"></div>
+			<img src="img/panier.png" class="panier">
+			<div class="contentchiffre"></div>
+		</div>
+	</div>
+	<div class="contentfleches">
+		<img src="img/flechedroite.png"/>
+		<br>
+		<img src="img/flechegauche.png"/>
+	</div>
+	<div class="contentsousmenu">
+		<img src="img/question.png"/>
+		<br><br>
+		<img src="img/maps.png"/>
+		<br><br>
+		<img src="img/login.png"/>
+	</div>
 </div>
 
 
@@ -24,54 +52,237 @@
     padding:0;
 	}
 	.content3dSlider{
+		overflow:hidden;
 		width:100%;
 		height:100vh;
-		background-image: url("img/bg.jpg");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 		position:relative;
-		overflow:hidden;
 	}
-  .image1{
-  		display:block;
-  		position:absolute;
-  		z-index:200;
-  		left:50%;
-  		top:100%;
-  		-webkit-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		transform: translateX(-50%);
-  }
+	.fond{
+		position:absolute;
+		z-index:80;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#f9be30;
+	}
+	.bruit{
+		position:absolute;
+		z-index:81;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-image:  url("img/bruit.jpg");
+		background-repeat: repeat;
+		opacity: 0.16;
+    	filter: alpha(opacity=16);
+	}
+	.rond1{
+		position:absolute;
+		z-index:82;
+		width:110%;
+		height:auto;
+		top:50%;
+	    left:50%;
+	    -ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	}
+	.rond2{
+		position:absolute;
+		z-index:83;
+		width:110%;
+		height:auto;
+		top:50%;
+	    left:50%;
+	    -ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	}
+	.rond3{
+		position:absolute;
+		z-index:84;
+		width:110%;
+		height:auto;
+		top:50%;
+	    left:50%;
+	    -ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	}
+	.lumiereblanche{
+		position:absolute;
+		z-index:85;
+		width:80%;
+		height:auto;
+		top:50%;
+	    left:50%;
+	    -ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	    opacity: 0.4;
+    	filter: alpha(opacity=40);
+	}
+	.ligne1{
+		position:absolute;
+		z-index:86;
+		width:1;
+		height:100%;
+		top:0;
+	    left:145px;
+	    border-right:solid 1px #fff;
+	    opacity: 0.3;
+    	filter: alpha(opacity=30);
+	}
+	.ligne2{
+		position:absolute;
+		z-index:87;
+		width:1;
+		height:100%;
+		top:0;
+	    right:145px;
+	    border-right:solid 1px #fff;
+	    opacity: 0.3;
+    	filter: alpha(opacity=30);
+	}
+	.logo{
+		position:absolute;
+		z-index:88;
+		width:145px;
+		top:20px;
+	    left:0;
+	    text-align:center;
+	}
+	.menu{
+		position:absolute;
+		z-index:89;
+		width:145px;
+		top:50%;
+		-ms-transform: translateY(-50%); /* IE 9 */
+   		-webkit-transform: translateY(-50%); /* Safari */
+	    transform: translateY(-50%);
+	    left:0;
+	    text-align:center;
+	}
+	.loupe{
+		position:absolute;
+		z-index:90;
+		width:145px;
+		bottom:20px;
+	    left:0;
+	    text-align:center;
+	}
+	.contentPanier{
+		position:absolute;
+		z-index:91;
+		width:144px;
+		height:144px;
+		top:0;
+	    right:0;
+	    text-align:center;
+	 
+	}
+	.contentfleches{
+		position:absolute;
+		z-index:92;
+		width:144px;
+		top:50%;
+	    right:0;
+	    text-align:center;
+	    -ms-transform: translateY(-50%); /* IE 9 */
+   		-webkit-transform: translateY(-50%); /* Safari */
+	    transform: translateY(-50%);
+	}
+	.contentsousmenu{
+		position:absolute;
+		z-index:93;
+		width:144px;
+		bottom:20px;
+	    right:0;
+	    text-align:center;
+
+	}
+	.contenticonepanier{
+		width:100%;
+		height:100%;
+		position:relative;
+	}
+	.bgpanier{
+		position:absolute;
+		z-index:1;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#000;
+		opacity: 0.1;
+    	filter: alpha(opacity=10);
+	}
+	.panier{
+		position:absolute;
+		z-index:2;
+		top:50%;
+		left:50%;
+		-ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	}
+	.contentchiffre{
+		position:absolute;
+		z-index:3;
+		top:50%;
+		left:50%;
+		width:25px;
+		height:25px;
+		border-radius:50%;
+		background-color:#f9be30;
+		margin-top:-30px;
+		margin-left:10px;
+	}
+	
+
+	
 </style>
 
 <script>
 
    $( window ).on( "load", function() {
-	   
-	   
 	   crea_3d_slider($( ".content3dSlider" ));
-	   
-	   function crea_3d_slider(o){
-     	$( ".image1" ).animate({
-			top: '40%',
-			width:'30%',
-			height:'20%'
-		},"slow");
-
-     	$( ".next" ).click(function() {
-   			$( ".image1" ).animate({
-			top: '35%',
-			width:'0',
-			height:'0'
-		},"slow");
+	   miseEnPlace();
+		$( window ).resize(function() {
+		   miseEnPlace();
 		});
-	   }
-
-
-
-
     });
+
+    function crea_3d_slider(o){
+     	
+	}
+
+	function miseEnPlace(){
+		//on récupère à nouveau al alrgeur de la fenêtre
+		largeur_slide = $(window).width();
+		hauteur_slide = $(window).height();
+		
+		if(largeur_slide>hauteur_slide){
+			$( ".rond1" ).css('width','110%');
+			$( ".rond1" ).css('height','auto');
+			$( ".rond2" ).css('width','110%');
+			$( ".rond2" ).css('height','auto');
+			$( ".rond3" ).css('width','110%');
+			$( ".rond3" ).css('height','auto');
+		}
+		if(hauteur_slide>largeur_slide){
+			$( ".rond1" ).css('height','110%');
+			$( ".rond1" ).css('width','auto');
+			$( ".rond2" ).css('height','110%');
+			$( ".rond2" ).css('width','auto');
+			$( ".rond3" ).css('height','110%');
+			$( ".rond3" ).css('width','auto');
+		}
+		
+
+	}
 
 </script>
 
