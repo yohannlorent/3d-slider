@@ -54,14 +54,14 @@
 				<div class="contenanceboite">Boîte Métal (125 g)</div>
 				<div class="descriptif">BB Detox est une succulente Boisson Beauté au thé vert, maté, rooibos, guarana et pissenlit, aromatisée d'une douce note de pamplemousse. 
 				Un joli mélange idéal pour une pause beauté.</div>
-				<div class="nbtasses">Environ 200 <img src="img/tasse.png"></div>
+				<div class="nbtasses">Environ <strong>200</strong> <img src="img/tasse.png"></div>
 				<div class="prix">39,99€</div>
 				<div class="button">En savoir +</div>
 			</div>
 			<div class="idees">
-				<div class="idee01">Temps de diffusion 3-4 min</div>
-				<div class="idee02">Température d’infusion 85-89° C</div>
-				<div class="idee03">Idéal en thé glacé</div>
+				<div class="idee01"><strong>Temps de diffusion</strong><br> 3-4 min</div>
+				<div class="idee02"><strong>Température d’infusion</strong><br> 85-89° C</div>
+				<div class="idee03"><strong>Idéal en thé glacé</strong></div>
 			</div>
 		</div>
 	</div>
@@ -71,8 +71,9 @@
 
 <style type="text/css">
 
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	
   	body{
    	 	margin:0;
     	padding:0;
@@ -310,7 +311,88 @@
    		-webkit-transform: translate(-50%, -50%); /* Safari */
 	    transform: translate(-50%, -50%);
 	}
-	
+	.infos{
+		position:absolute;
+		z-index:2;
+		left:20px;
+		top:50%;
+		width:30%;
+		-ms-transform: translateY(-50%); /* IE 9 */
+   		-webkit-transform: translateY(-50%); /* Safari */
+	    transform: translateY(-50%);
+	}
+	.titre{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:800;
+		font-size:71px;
+		line-height:78px;
+		color:#fff;
+	}
+	.contenanceboite{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		font-size:18px;
+		line-height:21px;
+		color:#fff;
+	}
+	.descriptif{
+		margin-top:20px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		font-size:16px;
+		line-height:21px;
+		color:#866002;
+	}
+	.nbtasses{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		font-size:16px;
+		line-height:21px;
+		color:#fff;
+		margin-top:20px;
+	}
+	.prix{
+		font-family: 'Open Sans', sans-serif;
+		font-weight:800;
+		font-size:65px;
+		line-height:70px;
+		color:#ffe8b2;
+		margin-top:20px;
+	}
+	.button{
+		
+		border:solid 1px #fff;
+		display:inline-block;
+		padding:15px;
+		padding-top:8px;
+		padding-bottom:8px;
+		margin-top:20px;
+		color:#fff;
+	}
+	.idees div{
+		border:solid 1px #fff;
+		color:#fff;
+		padding:20px;
+		text-align:center;
+		margin-top:20px;
+	}
+	.idees{
+		position:absolute;
+		z-index:3;
+		right:20px;
+		top:50%;
+		width:15%;
+		-ms-transform: translateY(-50%); /* IE 9 */
+   		-webkit-transform: translateY(-50%); /* Safari */
+	    transform: translateY(-50%);
+		
+		display:block;
+		
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		font-size:16px;
+		line-height:21px;
+	}
 
 	
 </style>
