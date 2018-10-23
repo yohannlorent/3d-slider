@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Slider zoomed</title>
+<title>Kusmi</title>
    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
@@ -46,14 +46,36 @@
 		<br><br>
 		<img src="img/login.png"/>
 	</div>
+	<div class="contentcentre">
+		<div class="processinterne">
+			<img src="img/kusmi01.png" class="kusmi01"/>
+			<div class="infos">
+				<div class="titre">Bb detox</div>
+				<div class="contenanceboite">Boîte Métal (125 g)</div>
+				<div class="descriptif">BB Detox est une succulente Boisson Beauté au thé vert, maté, rooibos, guarana et pissenlit, aromatisée d'une douce note de pamplemousse. 
+				Un joli mélange idéal pour une pause beauté.</div>
+				<div class="nbtasses">Environ 200 <img src="img/tasse.png"></div>
+				<div class="prix">39,99€</div>
+				<div class="button">En savoir +</div>
+			</div>
+			<div class="idees">
+				<div class="idee01">Temps de diffusion 3-4 min</div>
+				<div class="idee02">Température d’infusion 85-89° C</div>
+				<div class="idee03">Idéal en thé glacé</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 
 <style type="text/css">
-  body{
-    margin:0;
-    padding:0;
+
+
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  	body{
+   	 	margin:0;
+    	padding:0;
 	}
 	.content3dSlider{
 		overflow:hidden;
@@ -259,6 +281,31 @@
 		position:absolute;
 		top:50%;
 		left:50%;
+		-ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	}
+	.contentcentre{
+		position:absolute;
+		width:calc(100% - 144px - 144px);
+		z-index:94;
+		height:100%;
+		left:50%;
+		-ms-transform: translateX(-50%); /* IE 9 */
+   		-webkit-transform: translateX(-50%); /* Safari */
+	    transform: translateX(-50%);
+	    top:0;
+	}
+	.processinterne{
+		width:100%;
+		height:100%;
+		position:relative;
+	}
+	.kusmi01{
+		position:absolute;
+		z-index:800;
+		left:50%;
+		top:50%;
 		-ms-transform: translate(-50%, -50%); /* IE 9 */
    		-webkit-transform: translate(-50%, -50%); /* Safari */
 	    transform: translate(-50%, -50%);
