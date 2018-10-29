@@ -13,10 +13,6 @@
 <body>
 <div class="content3dSlider">
 	<div class="fond"></div>
-	<div class="bruit"></div>
-	<img src="img/rond1.png" class="rond1"/>
-	<img src="img/rond2.png" class="rond2"/>
-	<img src="img/rond3.png" class="rond3"/>
 	<img src="img/lumiereblanche.png" class="lumiereblanche">
 	<div class="ligne1"></div>
 	<div class="ligne2"></div>
@@ -48,20 +44,19 @@
 	</div>
 	<div class="contentcentre">
 		<div class="processinterne">
-			<img src="img/kusmi01.png" class="kusmi01"/>
+			<img src="img/ananas.png" class="kusmi01"/>
 			<div class="infos">
-				<div class="titre">Bb detox</div>
-				<div class="contenanceboite">Boîte Métal (125 g)</div>
-				<div class="descriptif">BB Detox est une succulente Boisson Beauté au thé vert, maté, rooibos, guarana et pissenlit, aromatisée d'une douce note de pamplemousse. 
-				Un joli mélange idéal pour une pause beauté.</div>
-				<div class="nbtasses">Environ <strong>200</strong> <img src="img/tasse.png"></div>
-				<div class="prix">39,99€</div>
+			  <div class="titre">Ananas</div>
+				<div class="descriptif">Botaniquement parlant, l’ananas n’est pas un fruit, mais une multitude de baies qui se sont formées après la fusion des fleurs sur l’épi. Chacun des « yeux » ou renflements de l’écorce constitue une baie, donc un fruit.</div>
 				<div class="button">En savoir +</div>
 			</div>
 			<div class="idees">
-				<div class="idee01"><strong>Temps de diffusion</strong><br> 3-4 min</div>
-				<div class="idee02"><strong>Température d’infusion</strong><br> 85-89° C</div>
-				<div class="idee03"><strong>Idéal en thé glacé</strong></div>
+				<div class="idee01"><strong>propriétés</strong><br> - anti-inflammatoires<br>
+					- antithrombotiques<br>
+					- antiplaquettaires<br> 
+					- fibrinolytiques</div>
+				<div class="idee02"><strong>excellente source de manganèse</strong></div>
+				<div class="idee03"><strong>source de vitamine C</strong></div>
 			</div>
 		</div>
 	</div>
@@ -91,71 +86,20 @@
 		left:0;
 		width:100%;
 		height:100%;
-		background-color:#f9be30;
+		background-color:#fcc133;
 	}
-	.bruit{
-		position:absolute;
-		z-index:81;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-		background-image:  url("img/bruit.jpg");
-		background-repeat: repeat;
-		opacity: 0.10;
-    	filter: alpha(opacity=10);
-	}
-	.rond1{
-		position:absolute;
-		z-index:82;
-		width:110%;
-		height:auto;
-		top:50%;
-	    left:50%;
-	    -ms-transform: translate(-50%, -50%); /* IE 9 */
-   		-webkit-transform: translate(-50%, -50%); /* Safari */
-	    transform: translate(-50%, -50%);
-	         opacity: 0.5;
-    	filter: alpha(opacity=50);
-	}
-	.rond2{
-		position:absolute;
-		z-index:83;
-		width:110%;
-		height:auto;
-		top:50%;
-	    left:50%;
-	    -ms-transform: translate(-50%, -50%); /* IE 9 */
-   		-webkit-transform: translate(-50%, -50%); /* Safari */
-	    transform: translate(-50%, -50%);
-	         opacity: 0.5;
-    	filter: alpha(opacity=50);
-	}
-	.rond3{
-		position:absolute;
-		z-index:84;
-		width:110%;
-		height:auto;
-		top:50%;
-	    left:50%;
-	    -ms-transform: translate(-50%, -50%); /* IE 9 */
-   		-webkit-transform: translate(-50%, -50%); /* Safari */
-	    transform: translate(-50%, -50%);
-	      opacity: 0.5;
-    	filter: alpha(opacity=50);
-	}
+	
 	.lumiereblanche{
 		position:absolute;
 		z-index:85;
-		width:80%;
+		width:50%;
 		height:auto;
 		top:50%;
 	    left:50%;
 	    -ms-transform: translate(-50%, -50%); /* IE 9 */
    		-webkit-transform: translate(-50%, -50%); /* Safari */
 	    transform: translate(-50%, -50%);
-	    opacity: 0.3;
-    	filter: alpha(opacity=30);
+	    
 	}
 	.ligne1{
 		position:absolute;
@@ -269,7 +213,7 @@
 		width:25px;
 		height:25px;
 		border-radius:50%;
-		background-color:#f9be30;
+		background-color:#614809;
 		margin-top:-30px;
 		margin-left:10px;
 	}
@@ -282,6 +226,8 @@
 		position:absolute;
 		top:50%;
 		left:50%;
+		color:#fff;
+		font-family: 'Open Sans', sans-serif;
 		-ms-transform: translate(-50%, -50%); /* IE 9 */
    		-webkit-transform: translate(-50%, -50%); /* Safari */
 	    transform: translate(-50%, -50%);
@@ -325,56 +271,46 @@
 		font-family: 'Open Sans', sans-serif;
 		font-weight:800;
 		font-size:71px;
-		line-height:78px;
-		color:#fff;
-	}
-	.contenanceboite{
-		font-family: 'Open Sans', sans-serif;
-		font-weight:400;
-		font-size:18px;
-		line-height:21px;
+		line-height:60vpx;
 		color:#fff;
 	}
 	.descriptif{
-		margin-top:20px;
+		margin-top:16px;
 		font-family: 'Open Sans', sans-serif;
 		font-weight:400;
 		font-size:16px;
 		line-height:21px;
 		color:#866002;
 	}
-	.nbtasses{
-		font-family: 'Open Sans', sans-serif;
-		font-weight:400;
-		font-size:16px;
-		line-height:21px;
-		color:#fff;
-		margin-top:20px;
-	}
-	.prix{
-		font-family: 'Open Sans', sans-serif;
-		font-weight:800;
-		font-size:65px;
-		line-height:70px;
-		color:#ffe8b2;
-		margin-top:20px;
-	}
+	
 	.button{
-		
-		border:solid 1px #fff;
 		display:inline-block;
-		padding:15px;
-		padding-top:8px;
-		padding-bottom:8px;
+		background-color:#614809;
+		font-family: 'Open Sans', sans-serif;
+		text-transform:uppercase;
+		font-weight:bold;
+		text-align:center;
+		width:200px;
+		font-family: 'Open Sans', sans-serif;
+		min-height : 20px;
 		margin-top:20px;
+		padding-top:10px;
+		padding-bottom:10px;
 		color:#fff;
+		border-radius: 30px;
+		
 	}
 	.idees div{
-		border:solid 1px #fff;
-		color:#fff;
+		border-left:solid 4px #614809;
+		color:#614809;
 		padding:20px;
-		text-align:center;
+		text-align:left;
 		margin-top:20px;
+		
+	}
+	.idees strong{
+		
+		text-transform:uppercase;
 	}
 	.idees{
 		position:absolute;
