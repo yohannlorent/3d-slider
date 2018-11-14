@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+	
+  	body{
+   	 	margin:0;
+    	padding:0;
+	}
+	.content3dSlider{
+		overflow:hidden;
+		width:100%;
+		height:100vh;
+		position:relative;
+	}
+	.fond{
+		position:absolute;
+		z-index:80;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:#fcc133;
+	}
+	
+	.lumiereblanche{
+		position:absolute;
+		z-index:85;
+		width:100%;
+		height:auto;
+		top:50%;
+	    left:50%;
+	    -ms-transform: translate(-50%, -50%); /* IE 9 */
+   		-webkit-transform: translate(-50%, -50%); /* Safari */
+	    transform: translate(-50%, -50%);
+	    
+	}
+

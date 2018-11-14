@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>3d slider</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/3d-slider.js"></script>
+
+	<link href="css/3d-slider.css" rel="stylesheet" media="all" type="text/css"> 
+	<link href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+<div class="content3dSlider">
+	<div class="fond"></div>
+	<img src="img/lumiereblanche.png" class="lumiereblanche">
+	
+        <div class="slide" bgcolor="#fcc133">
+    		<div class="produit"><img src="img/ananas.png"></div>
+			<div class="titre">Ananas</div>
+			<div class="chapeau">Botaniquement parlant, l’ananas n’est pas un fruit, mais une multitude de baies qui se sont formées après la fusion des fleurs sur l’épi. Chacun des « yeux » ou renflements de l’écorce constitue une baie, donc un fruit.</div>
+			<div class="push" bgcolor="#614809"></div>
+			<div class="bienfait01">propriétés anti-inflammatoires</div>
+			<div class="bienfait02">excellente source de manganèse</div>
+			<div class="bienfait03">source de vitamine C</div>	
+ 		</div>
+
+		<div class="slide" bgcolor="#b8d431">
+    		<div class="produit"><img src="img/citrons.png"></div>
+			<div class="titre">Citron vert</div>
+			<div class="chapeau">Que ce soit pour améliorer la santé en général, pour contrôler votre poids, ou pour combattre divers trouble, les qualités du citron vert peuvent être très utiles. </div>
+			<div class="push" bgcolor="#285211"></div>
+			<div class="bienfait01">Amélioration du système immunitaire</div>
+			<div class="bienfait02">Bon pour perdre du poids</div>
+			<div class="bienfait03">propriétés anti-inflammatoires</div>	
+ 		</div>
+	
+		<div class="slide" bgcolor="#f1524e">
+    		<div class="produit"><img src="img/fraises.png"></div>
+			<div class="titre">Fraises</div>
+			<div class="chapeau">Ce petit fruit rouge est riche en vitamines et minéraux et possède de nombreux bienfaits pour la santé.</div>
+			<div class="push" bgcolor="#660e0c"></div>
+			<div class="bienfait01">sources de fibres</div>
+			<div class="bienfait02">sources de manganèse</div>
+			<div class="bienfait03">riches en vitamine C</div>	
+ 		</div>
+	
+</div>
+	
+	 
+
+<script>
+
+	 $( window ).on( "load", function() {
+       init_slider();
+    });
+</script>
+	
+	
+</body>
+</html>
